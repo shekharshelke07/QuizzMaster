@@ -1,0 +1,436 @@
+
+Online Application: Online Quizz Portal
+Team:			Yash Duddalwar
+                        Shekhar Shelke
+---------------------------------------------
+SRS Document:
+==============
+Introduction
+
+Purpose:
+	The main objective of ONLINE QUIZ is to efficiently evaluate the candidate thoroughly through a fully automated system that not only saves lot of time but also gives fast results.
+ For students they give papers according to their convenience and time and there is no need of using extra thing like paper, pen etc.It gives instant evaluation of examination given by students.  
+
+Scope:
+     Scope of this project is very broad in terms of other manually taking exams. Few of them are:-
+ This can be used in educational institutions as well as in corporate world.
+ Can be used anywhere any time as it is a web based application (users’ Location doesn’t matter).
+No restriction that administrator has to be present when the candidate takes the test.
+
+
+Definitions:
+	   OSS --> 	Online Shopping System
+	   SRS --> 	Software Requirement Specification
+	   GUI---> 	Graphical User Interface
+	   Portal-->    Personalized Website
+	   Stakeholder--> The user who will participate in the System. And admin of system
+				Ex.  Student,Admin
+	   UML--->	Software Engineering Notation for visualising System in the form diagrams
+ 	   SSL--->	Secure Socket Layer used for providing restricted access to application.
+	   BOD--->      Board Of Directors (Management).
+           RDBMS -->    Relational Dadabase Management System.
+	   CLUSTERS---> Group of independent servers.	
+
+Overview:
+	This system provide a simpler solution to the students to give exams without using pen paper with instant evaluation of exams.each students consistency and improvement able to calculate easily after test series.
+        
+
+Additional Information:
+	The system work on internet server, so it will  be operated by any end user for the giving examswith secure platform.
+        This system provide gives benifit to students to giving exam from any locations.
+        
+	
+General Description:
+	The Online QUIZ portal helps to students to give practice as well as certifications exams in online platform. 
+	The Online Quiz portal will use the internet as the sole method for students academic evaluation in instant time.
+	
+	
+Functional Requirement:
+	This section provides requirement overview of the system. Various functional modules that can be implemented by 
+	the system will be-
+	
+	Description:
+	Registration if student wants to give the exam then he/she must be registered, Unregistered user i.e student can not get access.
+        Login student logins to the system by entering valid user id and password for tests.
+	End User can Browse subjects and questions set, their categories as well. 
+	Payment for end user;if student want to get certification after giving test series he/she would have to choose paid test option.
+	Logout after successfull completion and having track record of test completed.
+	if paid test, certificate Generation after all required test series completed.
+	then sent one copy to user's Email- address and 
+        another one for the system database to calculate the monthly record.
+        The term client/server refers primarily to an architecture or logical division of responsibilities, 
+        the client is the application (also known as the front-end), and the server is the RDBMS (also known as the back-end).
+        A client/server system is a distributed system in which,Some sites are client sites and others are server sites.
+        All the data resides at the server sites.
+        All applications execute at the client sites.
+        
+
+Technical Issues:
+	This system will work on client-Server architecture. It will require an internet server.
+	The system should support some commonly used browser such as Chrome etc.
+	Interface Requirement Various interfaces for the Quiz could be 
+	1.Login Page, 
+	2.Registration form
+    
+	There will be a screen displaying information about category of quizes that the site having.
+
+	The students may select the different options which will be open in another screen as
+		1.Login Page
+		2.Registration Form
+		3.Quiz category Page
+                4.Test progress
+                5.Account  Settings
+                6.Payment Gateways
+	
+ Hardware Interface:
+	The System must run over the internet,
+        All the hardware shall require to connect to internet will be hardware interface for the system.
+		e.g. modem,  WAN, LAN
+		Specialized Server Infrastructure Hardware
+        The system should use distrubuted servers i.e cloud for managing large amount of data so as to make it appear as single unit for end-user.
+        The system should have proper clusters for backup.
+		
+ Software Interface:
+	The system is on server so it requires the any scripting language like JSP or  PHP or ASP, ETC.
+        The system should be able to exchange data using XML, JASON or any advance technology.
+	The system require DataBase also for the store the any transaction of the system like MySql or oracle, or SQL server etc.
+	System also require DNS (Domain Name space) for the naming on the internet.
+	http://www.Quizmaster.in
+	http://www.wikiquize.in
+        At the end-user need web browser for interact with the system.
+
+
+Performance Requirement:
+	There is no  performance requirement in this system, because the server request  and respone to client is totally based on internet connection of enduser.
+
+Design Constrains:
+	This system should be developed using  Standard Web Page Development Tool , which conforms GUI standards such like HTML, XML, JSON,etc.
+        The system should support various RDMS and Cloud Technologies.
+
+
+Non-Functional Requirements
+
+1.Security:
+	  SSL
+	The System use SSL (Secure Socket Layer) in all trancations that include any confidential student information.
+	The system must automcatically log out all student after a period of inactivity.
+	The system should not leave any cookies on the student's computer containing users's password.
+	The system's back-end servers shall  only be accessible to authenticated administrators.
+	Sensitive data will be encrypted  before being sent onver insecure connections like internet.
+        The proper firewalls should be developed to avoid intrusions from the internal or external sources.
+
+
+2.Reliability:
+	The system provides storage of all databases on redundant computers with  automatic switchover. 
+	The main pillar of reliability of the system  is the backup of the database 
+	which is conitinously maintained and update to reflect  the most recenet changes.
+
+
+3: Availability:
+	The system should be available at all times.meaning the user can access it using web browser, 
+        only restricted by the down time of the server on which the system runs.
+        In case of a of a hardware failure or database corruption, a replacement page will be shown. 
+	uptime : It mean 24 * 7 availability
+	100%--------------
+	99.9%
+	99.999%
+	99.9999%
+
+
+4: Maintainability:
+	A commercial database is used for maintaining the database and application server takes care of the site. 
+	The maintainability can be done efficiently.
+
+5.Portability:
+	The application is HTML and scripting language based (Javascript). So the end user part is fully portable and any system using 
+	any web browser should be able to use the features of the system,including any hardware platform that is available 
+	or will be available in the futuer. 
+	An end-user  is used this system on an OS;either it is Windows or Linux.
+	The System shall run on PC, Laptops and PDA.etc.
+	The  technology should be transferable to different environments easily.
+
+6.Accessibility:
+        Only registered users should be allowed to give exams after authentications.
+        Only GUI access of the system should be permited to end users.
+
+7.Policies:
+       The system should adhere to all the legal formalities of the particular countries.
+       The system should maintain security related to sensitive data.
+
+8.Efficiency:
+	The system should provide good throughput and response to multiple users without burdening the system by using appropriate number of servers.
+
+9.Safety:
+      Software should not harm ethical and environmental conditions of the end users machine.
+
+10.Modulariy:
+      The system should have user friendly interface. 
+      It should be easily updated,modified and reused. 
+
+
+Operational Scenario:
+	Students Interaction
+
+	student can give practice as well as certification exam test series after successfull login.
+        for certification paid test series available which starts only after payment,after completion of series e-certificate will sent to respective users mail id.
+        
+	
+	
+	admin Interaction:
+	
+	questions sets by admin.
+	
+Preliminary Schedule: :
+
+	
+	1.Register & Login
+        2.validate user
+	2.choose category :practice test series or exam series for certification  
+	3.practice test series:
+               --choose subject category
+	       --give test with timer
+	       --end test displayes score
+	       --student can see correct answers
+               --proceed to next test or logout
+	4.exam series for certification :
+               --fill basic details form
+               --payment
+               --ByCreditCart By Debit Card By online banking
+               --choose subject category
+	       --give test with timer
+               --student can see correct answers
+	       --next test
+	       --after completion of test series score displayes
+               --copy of certificate sends to users email id entered in basic details form. 
+	5.Logout
+	6.Give feedback
+--------------------------------------------------------------------------------------------------------------------------------------	
+1)Identify users,actors:
+                              Enduser---------accessible only free tests,exam papers etc
+                              Customer--------accessible free tests,exam papers as well as paid test 
+                                               series if Enduser register or subscribe himself for premium test series.
+                              Administrator----Analysis of test papers,exams,quizes given by the customers or endusers from charts
+                                               and graphs provided on administrator dashboard.Administrator has rights to add 
+                                               test and exams in databases,basically he can do CRUD opearations in databases to add or delete
+                                               questions in or from different tests.
+ 
+2)Identified Modules:
+                  Reusable Module
+                             userCatalogueModule(Enduser,customers,Administrator)
+                             courseCatalogueModule
+                             Test or QA Module
+                             paymentInterfaceModule
+                             BI (reports,login,logout,dashboard,register,resetpassword)
+                             premiumMembershipModule
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Application Architecture:
+
+	Physical Computing:
+
+	Virtual Computing: in house virtualization
+		Virtualization:
+		
+			 virtual machines are created with webserver , database server installation
+			 on same physical infrastructure
+		 Virtualization:
+				VMware, Oracle Virtual box
+				HyperV
+
+	Cloud Computing:
+			Public Cloud:
+				
+				Amazon Web services ( AWS)
+					 will be able to support hosting your servers, services, applications
+					 on Amazon datacenters
+
+
+	Hands-On
+
+	Introduction Jira (SAAS) for following Agile Methodology
+	Scrum
+	Github----Code repository
+
+	Application Architecture
+	
+
+Application Architecture:
+
+	Application = 
+			Logic 	+  data
+
+	Logic =(UI Logic  + Business Logic + DataAccess Logic) 
+	Data  =( structured data , Non Structured data)
+
+
+	Desktop application Architecture and Online Application Architecture
+
+
+Online Application:
+
+	    Web based Application
+		    deployed on web and accessed by users from anywhere
+
+		    Quizz Application------Web portal-- used remotely by end users,
+							                  Admin,
+								          Customers
+Logic:
+     UI Logic:
+
+		 Web Pages +  HTML controls + Web Components (Angular)
+		 Navigation : (UI Routing) HTML Links, Routing mechansim
+		 Data Binding : DOM  + JSP tags (JSTL) + {{}} ngModel,
+		 
+		 Event Binding : 				action handlers
+					
+				 
+			HTTP Request:	GET:----------------Doget
+					POST:---------------Dopost
+					PUT:
+					DELETE:
+
+              Client Side UI----------------HTML, CSS, javaScript, bootstrap
+					        UI (Client Side UI Framework)
+						Angular, React, Vue,..........
+
+	Web Logic: ( Server Side processing)
+
+		Server UI---------------- JSP, servelet,  ( classical java web technology)
+				 spring MVC  ( to take advantage of MVC design Pattern using ready made frmwrk)
+						 Model, View, Controller
+						 Router
+						 (SOA  layer)
+						Spring Boot api
+						CRUD REST API
+						ORM Technique:Hibernate  ( ORM)
+						       ,JPA
+				         	JDBC  ( database Connectivity)
+		State management
+				
+		 	Client Side state management
+				cookies, querystring, form collection, hidden variables
+				 local storage, session storage, Web sql, 
+
+			Server Side state management
+				session, Cache,
+				database
+	Business Logic:
+		
+	
+		Java console application will be used to test your business Logic
+
+		Core Java:
+
+		will contain
+		 1.business query processing
+		 2.business operation managment
+		 3.Business data manipulation
+		
+	   from online quizz portal point of view
+                  
+              modules:
+                             userCatalogueModule(Enduser,customers,Administrator)
+                                   CRUD Operation:
+                                               insert user, update user, delete user
+                                   functionality:
+                                     authenticateUSer
+                                     get all users sort by names,sorted by id 
+                                     get all Endusers,get all customers                                      
+                                     get Specific user                                    
+                                     
+                             courseCatalogueModule
+                                         couresCatalogue opearation:  
+                                                   get all courses sort by title,id
+                                                   get top visited courses names
+                                                   get cousre name with most number of tests
+                                                   get number of courses
+
+                             Test or QA Module
+                                         Test or QA CRUD opearation:
+                                                   insert Test, update Test, delete test
+                                         functionalities:
+                                                   get all test details based on course name,id
+                                                   get most visited test in particular test
+                                                   get test with most number question
+                             paymentInterfaceModule
+                                         paymentInterfaceModule CRUD operations:
+                                                   insert accocunt,update account,delete account
+                                         fucntionalities:
+                                                  get account details
+                                                  get account list sort by account no 
+                                                              
+                             BI (reports,loggig,dashboard,register,resetpassword)
+                                      
+                                         bussinessModule:
+                                             resetpassword                                                 
+                                             registersusers
+                                             getDashBoard
+                                             get Register Users,get Course Details,get Most Visted Course
+                                             get All Preminum Users;
+                                             get users with most number tests given  
+
+                             premiumMembershipModule
+
+                                         premiumMembershipModule CRUD opreations:
+                                            insert memeber,update memeber,delete memeber
+                                         functionalities:                 
+                                            get All Premium Members
+                                            check for membership
+                                            get duration for the memebership
+                                        
+	
+Data :
+		 Structured Data
+			 RDBMS
+				fields
+                                tables 
+				constraints
+
+				Add some dummy records in your newly created database
+
+				write  reusable SQL queries against those database tables to check bussiness Queries
+				Test those SQL queries on existing dummy database you built
+
+                         List of tables:
+                                          EndUser:
+                                                fields:Id,FirstName,LastName,username,password,contactNo,Address,email
+                                                constraints: primary key-Id,unique-firstName+lastname,password,email,contactNo
+ 
+                                          customer:
+                                                fields:Id,FirstName,LastName,username,password,contactNo,Address,email,authenticate
+                                                constraints: primary key-Id,unique-firstName+lastname,password,email,contactNo
+ 
+                                          administrator:
+                                                fields:Id,FirstName,LastName,username,password,contactNo,email
+                                                constraints: primary key-Id,unique-firstName+lastname,password,email,contactNo
+
+                                          authenticate:
+                                                fields:payment,Ispremium,date,duration,account
+                                                constraints:not null-payment,duration,account 
+
+                                          account:
+                                                fields:accountNo,name of accountant,balance,IFSC,branch                                                      					
+                                                constraints:primary key-accountNo,not null-balance,nam of accountant,unique-IFSC
+
+                                          test: 
+                                                fields:id,title
+                                                constraints:primary key:id,unique:title
+
+                                          course:
+                                                fields:id,title,tests
+                                                constraints:primary key:id,unique:title,not null-tests
+                                          
+                                          question:
+                                                id,tile,answers                                                
+                                                constraints:primary key:id,unique:title,not null-answers
+
+                                          answers:
+                                                fields:id,title
+                                                constraints:primary key:id,not null-title
+                                                    
+		 Unstrctured:
+
+			 NoSQL
+			 	Social Media
+				 MongoDB
+		
