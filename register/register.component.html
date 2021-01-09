@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
- 
-
 </head>
 <body>
-    <div class="regform"><h1>Registration</h1></div>
-    <div class="main">
-       <form>
-           <div id="name">
-               <h2 class="name">Name</h2>
-               <input class="firstname" type="text" name="firstname"><br>
-               <label class="firstlabel">first name</label>
-               <input class="lastname" type="text" name="last_name">
-               <label class="lastlabel">last name</label>
-           </div>
-           <h2 class="name">Username</h2>
-           <input class="uname" type="text">
-           <h2 class="name">Password</h2>
-           <input class="company" type="text" name="company">
-           <h2 class="name">Email</h2>
-           <input class="email" type="text" name="email">
-           <div id="role">
-            <h2 class="name">Role</h2>
-            <input class="role1" type="radio" name="role"><label class="label1">Admin</label>
-            <input class="role2" type="radio" name="role"><label class="label2">Student</label>
-            <input class="role3" type="radio" name="role"><label class="label3">Customer</label>
+<div class="backgrounding">
+    <div class="header">
+        <h1 class="h1">Registration</h1>
+    </div> 
+    <div class="main-form"> 
+ <form #userform="ngForm">
+     {{ ngmodel | json }}
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" class="form-control is-invalid" placholder="first name" id="fn" [ngModel]="ngmodel.firstname">
+                <div class="invalid-feedback">Looks Good</div>     
+            </div>
+        </div>         
+        <div class="col">
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" class="form-control" [ngModel]="ngmodel.lastname">
+                    <small class="form-text text-muted">
+                        This should be your Last Name
+                    </small>
+                </div>     
         </div>
-           <button type="submit">Register</button>
-        </form>
     </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="pass" class="form-control" [ngModel]="ngmodel.password">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" name="email" class="form-control" [ngModel]="ngmodel.email">
+    </div>
+    <div class="form-group">
+        <label>Select Role</label>
+        <select name="role" class="form-control" [ngModel]="ngmodel.role">
+            <option value="admin">Admin</option>
+            <option value="student">Student</option>
+            <option value="customer">Customer</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">submit</button>
+    </div>
+</form>
+</div>
+</div>
 </body>
 </html>
+
